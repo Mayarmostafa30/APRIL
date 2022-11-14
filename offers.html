@@ -1,0 +1,570 @@
+<!DOCTYPE html>
+<html lang="en" dir="rtl">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>April</title>
+  <link href='https://fonts.googleapis.com/css?family=Almarai' rel='stylesheet'>
+  <link rel="stylesheet" href="css/fontawosome.all.min.css" />
+  <link rel="stylesheet" href="css/animate.css" />
+  <link rel="stylesheet" href="fonts/icomoon/style.css">
+  <link href="css/swiper-bundle.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="css/bootstrap.min.css" />
+  <link rel="stylesheet" href="css/style.css" />
+
+</head>
+
+
+
+<body>
+  <!---------------------------------------- Menu of Mobile -------------------------------------------->
+  <div class="site-mobile-menu site-navbar-target">
+    <div class="site-mobile-menu-header">
+      <div class="site-mobile-menu-close mt-3">
+        <span class="icon-close2 js-menu-toggle"></span>
+      </div>
+    </div>
+    <div class="site-mobile-menu-body"></div>
+  </div>
+
+  <!----------------------------------------End Menu of Mobile -------------------------------------------->
+
+  <!----------------------------------------Desktop Menu -------------------------------------------------->
+  <div class="top-bar ">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12  js-clone-nav">
+          <a href="#" class=""> <span class="mx-2  icon-user" style="color:#C36FA3;"></span><span
+              class=" d-md-inline-block"> حسابي </span></a>
+          <span class="mx-md-2 d-inline-block space"></span>
+          <a href="#" class=""> <span class=" d-md-inline-block">اللغة</span></a>
+          <span class="mx-md-2 d-inline-block space"></span>
+          <a href="#" class=""><strong class=" d-md-inline-block">Saudi Riyal(SAR)</strong></a>
+
+
+          <div class="float-md-right ">
+            <span class="highlight" style="background: #f9d9da;padding: 10px 0 10px 0;">
+              <a href="#" class=""> <span class=" d-md-inline-block pr-md-2">تسجيل دخول</span></a>
+              <span class="mx-md-2 d-inline-block space"></span>
+              <a href="#" class=""> <span class=" d-md-inline-block">حساب جديد</span></a>
+            </span>
+            <span class="mx-md-2 d-inline-block space"></span>
+            <a href="#" class=""> <span class=" d-md-inline-block"> الرئيسية</span></a>
+            <span class="mx-md-2 d-inline-block space"></span>
+            <a href="#" class=""> <span class=" d-md-inline-block">المفضلات</span></a>
+            <span class="mx-md-2 d-inline-block space"></span>
+            <a href="#" class=""> <span class=" d-md-inline-block"> الطلبات</span></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <header class="site-navbar js-sticky-header site-navbar-target" role="banner">
+    <div class="container">
+      <div class="row align-items-center position-relative">
+        <div class="site-logo">
+          <a href="index.html"><img src="img/logo.svg" alt="" style="width: 73%;"></a>
+        </div>
+
+        <div class="col-6">
+          <nav class="site-navigation ml-auto " role="navigation">
+
+            <ul class="site-menu main-menu js-clone-nav ml-auto d-none d-lg-flex justify-content-lg-end">
+              <li><a href="#home-section" class="nav-link">العروض</a></li>
+              <li><a href="#services-section" class="nav-link">فساتين</a></li>
+              <li><a href="#why-us-section" class="nav-link">موديلات ملابس</a></li>
+              <li><a href="#blog-section" class="nav-link">عبايات</a></li>
+              <li><a href="#contact-section" class="nav-link">إكسسوارات</a></li>
+            </ul>
+          </nav>
+
+        </div>
+        <div class="col-6">
+          <nav class="site-navigation" role="navigation">
+            <ul class="site-menu main-menu js-clone-nav ml-auto d-none d-lg-block">
+              <li>
+                <form method="get" action="/search_dark" id="search_dark">
+                  <input name="q" type="text" size="30" placeholder="بحث" />
+                </form>
+              </li>
+              <li><a href="#services-section" class="nav-link "><span class="me-2 icon-envelope-o"
+                    style="color:#C36FA3;"></span> تواصلي معنا </a></li>
+              <li><a href="#blog-section " class="nav-link ml-lg-0"><span> 0 منتجات</span> <span
+                    class="icon-shopping-cart" style="color:#C36FA3;"> </span> <strong class="mx-1"> SAR0.00
+                  </strong></a></li>
+            </ul>
+          </nav>
+
+        </div>
+
+        <div class="toggle-button d-inline-block d-lg-none"><a href="#"
+            class="site-menu-toggle py-5 js-menu-toggle text-black"><span class="icon-menu h3"></span></a></div>
+
+      </div>
+    </div>
+
+  </header>
+
+  <!----------------------------------------End Desktop Menu -------------------------------------------------->
+
+
+
+  <!-------------------------------------filter categories-------------------------------------->
+
+  <div id="page">
+    <div class="container">
+      <header id="masthead" class="site-header">
+        <div class="site-branding">
+          <h1 class="site-title"><a href="index.html" rel="home">احدث التشكيلات</a></h1>
+          <h3 class="site-description">المناسبة لكي ومن اختيار اشهر المصممين</h3>
+        </div>
+
+      </header>
+      <!-- Filters -->
+
+      <div class="container">
+        <div class="row">
+
+          <div class="filter col-lg-3 col-sm-6  ">
+            <div class="my-3 ">
+
+              <!--search -->
+              <div class="g-mb-30 mb-4">
+                <h3 class="mb-3 text-right">البحث</h3>
+                <input type="search" id="search_field" class="form-control" value="" id="floatingInput"
+                  placeholder="ماتودي البحث عنه">
+                <span class="me-2 icon-search search_icon" style="color:#fff;"></span>
+              </div>
+              <!--end search -->
+              <hr>
+              <!-- Size -->
+              <div class="g-mb-30">
+                <h3 class=" mb-3 text-right">المقاس</h3>
+
+                <ul class="list-unstyled d-flex flex-row-reverse flex-wrap justify-content-between p-0">
+                  <li class="my-2 mx-1">
+                    <div class="size">
+                      <span> xxS</span>
+                    </div>
+                  </li>
+                  <li class="my-2 mx-1">
+                    <div class="size">
+                      <span> xS</span>
+                    </div>
+                  </li>
+                  <li class="my-2 mx-1">
+                    <div class="size">
+                      <span> S</span>
+                    </div>
+                  </li>
+                  <li class="my-2 mx-1 ">
+                    <div class="size">
+                      <span> M</span>
+                    </div>
+                  </li>
+                  <li class="my-2 mx-1">
+                    <div class="size">
+                      <span> L</span>
+                    </div>
+                  </li>
+                  <li class="my-2 mx-1">
+                    <div class="size">
+                      <span> xL</span>
+                    </div>
+                  </li>
+                  <li class="my-2 mx-1">
+                    <div class="size">
+                      <span> xxL</span>
+                    </div>
+                  </li>
+                  <li class="my-2 mx-1">
+                    <div class="size">
+                      <span> xxxL</span>
+                    </div>
+                  </li>
+
+                </ul>
+              </div>
+
+              <!-- End Size -->
+
+              <hr>
+              <!-- Categories -->
+              <div class="g-mb-30">
+                <h3 class="mb-3 text-right">التصنيفات</h3>
+
+                <ul class="list-unstyled p-0">
+                  <li class="my-3 d-flex justify-content-between">
+                    <input id="cb1" type="checkbox">
+                    <span class="categories_text ml-5">عبايات خليجية
+                    </span>
+                    <span class="categories_numbers float-left g-font-size-12">202</span>
+                  </li>
+                  <li class="my-3 d-flex justify-content-between">
+                    <input id="cb1" type="checkbox">
+                    <span class="categories_text ml-5">عبايات كاجوال
+                    </span>
+                    <span class="categories_numbers float-left g-font-size-12">167</span>
+                  </li>
+                  <li class="my-3 d-flex justify-content-between">
+                    <input id="cb1" type="checkbox">
+                    <span class="categories_text ml-5">فساتين
+                    </span>
+                    <span class="categories_numbers float-left g-font-size-12">248</span>
+                  </li>
+                  <li class="my-3 d-flex justify-content-between">
+                    <input id="cb1" type="checkbox">
+                    <span class="categories_text ml-5">ملابس علوية
+                    </span>
+                    <span class="categories_numbers float-left g-font-size-12">150</span>
+                  </li>
+                  <li class="my-3 d-flex justify-content-between">
+                    <input id="cb1" type="checkbox">
+                    <span class="categories_text ml-5">ملابس سفلية
+                    </span>
+                    <span class="categories_numbers float-left g-font-size-12">98</span>
+                  </li>
+                  <li class="my-3 d-flex justify-content-between">
+                    <input id="cb1" type="checkbox">
+                    <span class="categories_text ml-5">اكسسوار
+                    </span>
+                    <span class="categories_numbers float-left g-font-size-12">260</span>
+                  </li>
+                </ul>
+              </div>
+
+              <!-- End Categories -->
+
+              <hr>
+
+              <!-- Color -->
+              <div class="g-mb-30">
+                <h3 class=" mb-3 text-right">اللون</h3>
+
+                <!-- Checkbox -->
+                <div class="bGButton">
+                  <button class="red"></button>
+                  <button class="orange"></button>
+                  <button class="yellow"></button>
+                  <button class="green"></button>
+                  <button class="blue"></button>
+                  <button class="purple"></button>
+                  <button class="grey"></button>
+                  <button class="white"></button>
+                  <button class="black"></button>
+                  <button class="purple"></button>
+                  <button class="grey"></button>
+                  <button class="white"></button>
+                  <button class="black"></button>
+                  <button class="grey"></button>
+                  <button class="white"></button>
+                  <button class="black"></button>
+                </div>
+
+                <!-- End Checkbox -->
+              </div>
+              <!-- End Color -->
+
+              <hr>
+
+              <!-- Rating -->
+              <div class="g-mb-30">
+                <h3 class=" mb-3 text-right">التقييم</h3>
+
+                <div class="stars">
+                  <input class="stars__checkbox" type="radio" id="first-star" name="star">
+                  <label class="stars__star" for="first-star">
+                    <svg class="stars__star-icon" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg"
+                      xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 53.867 53.867"
+                      style="enable-background:new 0 0 53.867 53.867;" xml:space="preserve">
+                      <polygon points="26.934,1.318 35.256,18.182 53.867,20.887 40.4,34.013 43.579,52.549 26.934,43.798 
+                      10.288,52.549 13.467,34.013 0,20.887 18.611,18.182 " />
+                    </svg>
+                  </label>
+                  <input class="stars__checkbox" type="radio" id="second-star" name="star">
+                  <label class="stars__star" for="second-star">
+                    <svg class="stars__star-icon" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg"
+                      xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 53.867 53.867"
+                      style="enable-background:new 0 0 53.867 53.867;" xml:space="preserve">
+                      <polygon points="26.934,1.318 35.256,18.182 53.867,20.887 40.4,34.013 43.579,52.549 26.934,43.798 
+                      10.288,52.549 13.467,34.013 0,20.887 18.611,18.182 " />
+                    </svg>
+                  </label>
+                  <input class="stars__checkbox" type="radio" id="third-star" name="star">
+                  <label class="stars__star" for="third-star">
+                    <svg class="stars__star-icon" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg"
+                      xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 53.867 53.867"
+                      style="enable-background:new 0 0 53.867 53.867;" xml:space="preserve">
+                      <polygon points="26.934,1.318 35.256,18.182 53.867,20.887 40.4,34.013 43.579,52.549 26.934,43.798 
+                      10.288,52.549 13.467,34.013 0,20.887 18.611,18.182 " />
+                    </svg>
+                  </label>
+                  <input class="stars__checkbox" type="radio" id="fourth-star" name="star">
+                  <label class="stars__star" for="fourth-star">
+                    <svg class="stars__star-icon" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg"
+                      xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 53.867 53.867"
+                      style="enable-background:new 0 0 53.867 53.867;" xml:space="preserve">
+                      <polygon points="26.934,1.318 35.256,18.182 53.867,20.887 40.4,34.013 43.579,52.549 26.934,43.798 
+                      10.288,52.549 13.467,34.013 0,20.887 18.611,18.182 " />
+                    </svg>
+                  </label>
+                  <input class="stars__checkbox" type="radio" id="fifth-star" name="star">
+                  <label class="stars__star" for="fifth-star">
+                    <svg class="stars__star-icon" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg"
+                      xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 53.867 53.867"
+                      style="enable-background:new 0 0 53.867 53.867;" xml:space="preserve">
+                      <polygon points="26.934,1.318 35.256,18.182 53.867,20.887 40.4,34.013 43.579,52.549 26.934,43.798 
+                      10.288,52.549 13.467,34.013 0,20.887 18.611,18.182 " />
+                    </svg>
+                  </label>
+                </div>
+              </div>
+              <!-- End Rating -->
+
+              <hr>
+              <!-- Pricing -->
+              <div class="g-mb-30">
+                <h3 class=" mb-3 text-right">الأسعار</h3>
+
+                <div class="text-center">
+
+                  <div class="range-slider" dir="ltr">
+                    <span class="rangeValues"></span>
+                    <input value="0" min="0" max="1000" step="10" type="range">
+                    <input value="1000" min="0" max="1000" step="10" type="range">
+                  </div>
+                  <!-- end Pricing -->
+                  <hr>
+                </div>
+              </div>
+              <!-- End Pricing -->
+
+              <hr>
+              <button class="btn btn-block u-btn-black g-font-size-12 text-uppercase g-py-12 g-px-25 bg-pink"
+                type="button">البحث</button>
+            </div>
+          </div>
+
+          <!-- End Filters -->
+          <!-------------------------------------filter categories-------------------------------------->
+
+          <!--  Products -->
+          <div class="row col-lg-9 col-md-6 mb-4 mx-0">
+            <div class="col-lg-4  col-sm-12 text-center product-item my-1">
+              <div class="product"> <img src="img/pijama_5.png" alt="">
+                <ul class="list-unstyled icons " style="color: #C36FA3;">
+                  <li class="icon"> أضف إلي السلة <span class="fas fa-shopping-cart  mx-3"> </span></li>
+                </ul>
+              </div>
+              <div class="favorite bg-white"><span class="fas fa-heart"></span></div>
+              <div class="tag bg-pink">عرض</div>
+              <div class="title pt-4"> تونيك تركي قطيفة</div>
+              <div class="price">220.00 SAR</div>
+            </div>
+            <div class="col-lg-4 col-sm-12 text-center product-item my-1">
+              <div class="product"> <img src="img/pijama_5.png" alt="">
+                <ul class="list-unstyled icons " style="color: #C36FA3;">
+                  <li class="icon"> أضف إلي السلة <span class="fas fa-shopping-cart  mx-3"> </span></li>
+                </ul>
+              </div>
+              <div class="favorite bg-white"><span class="fas fa-heart"></span></div>
+              <div class="tag bg-pink">عرض</div>
+              <div class="title pt-4"> تونيك تركي قطيفة</div>
+              <div class="price">220.00 SAR</div>
+            </div>
+            <div class="col-lg-4 col-sm-12 text-center product-item my-1">
+              <div class="product"> <img src="img/pijama_5.png" alt="">
+                <ul class="list-unstyled icons " style="color: #C36FA3;">
+                  <li class="icon"> أضف إلي السلة <span class="fas fa-shopping-cart  mx-3"> </span></li>
+                </ul>
+              </div>
+              <div class="favorite bg-white"><span class="fas fa-heart"></span></div>
+              <div class="tag bg-pink">عرض</div>
+              <div class="title pt-4"> تونيك تركي قطيفة</div>
+              <div class="price">220.00 SAR</div>
+            </div>
+            <div class="col-lg-4 col-sm-12 text-center product-item my-1">
+              <div class="product"> <img src="img/pijama_5.png" alt="">
+                <ul class="list-unstyled icons " style="color: #C36FA3;">
+                  <li class="icon"> أضف إلي السلة <span class="fas fa-shopping-cart  mx-3"> </span></li>
+                </ul>
+              </div>
+              <div class="favorite bg-white"><span class="fas fa-heart"></span></div>
+              <div class="tag bg-pink">عرض</div>
+              <div class="title pt-4"> تونيك تركي قطيفة</div>
+              <div class="price">220.00 SAR</div>
+            </div>
+            <div class="col-lg-4 col-sm-12 text-center product-item my-1">
+              <div class="product"> <img src="img/pijama_5.png" alt="">
+                <ul class="list-unstyled icons " style="color: #C36FA3;">
+                  <li class="icon"> أضف إلي السلة <span class="fas fa-shopping-cart  mx-3"> </span></li>
+                </ul>
+              </div>
+              <div class="favorite bg-white"><span class="fas fa-heart"></span></div>
+              <div class="tag bg-pink">عرض</div>
+              <div class="title pt-4"> تونيك تركي قطيفة</div>
+              <div class="price">220.00 SAR</div>
+            </div>
+            <div class="col-lg-4 col-sm-12 text-center product-item my-1">
+              <div class="product"> <img src="img/pijama_5.png" alt="">
+                <ul class="list-unstyled icons " style="color: #C36FA3;">
+                  <li class="icon"> أضف إلي السلة <span class="fas fa-shopping-cart  mx-3"> </span></li>
+                </ul>
+              </div>
+              <div class="favorite bg-white"><span class="fas fa-heart"></span></div>
+              <div class="tag bg-pink">عرض</div>
+              <div class="title pt-4"> تونيك تركي قطيفة</div>
+              <div class="price">220.00 SAR</div>
+            </div>
+
+
+          </div>
+
+        </div>
+        <!--  end Products -->
+        <!-- .next pages -->
+
+        <nav class="pagination d-flex justify-content-center ">
+          <span class="page-numbers current">1</span>
+          <a class="page-numbers" href="#">2</a>
+          <a class="next page-numbers" href="#">Next »</a>
+        </nav>
+        <br />
+        <!-- End next pages -->
+
+      </div>
+    </div>
+    <!-- .subscribe -->
+    <footer id="colophon" class="site-footer">
+      <div class="container">
+        <div class="site-info d-flex flex-column justify-content-center">
+          <h3 style="font-weight: 700; color: #719D93; font-family: Almarai;">اشترك لتصلك اخر العروض</h3>
+          <span class="mb-3" style="font-weight: 700; color: #000; font-family: Almarai;"> سجل للحصول علي اخر العروض
+            والمنتجات الحصرية</span>
+
+          <div class="email_div d-flex align-items-center">
+
+            <input type="email" id="email_field" class="form-control emptyval noroundedtop" value="" id="floatingInput"
+              placeholder="البريد الإلكتروني">
+            <span class="me-2 icon-envelope-o email_icon" style="color:#C36FA3;"></span>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- end subscribe -->
+  </div>
+
+  <!-- End content -->
+
+  <!-------------------------------------------- Footer Start ------------------------------------------------->
+  <div class="footer">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6 col-lg-2 text-right ml-lg-4 footer-logo">
+          <img src="img/logowhite.svg" alt="">
+        </div>
+        <div class="col-md-6 col-lg-9 text-right mr-lg-5">
+          <div class="row">
+            <div class="col-md-6 col-lg-4">
+              <div class="footer-link">
+                <h3>التصنيفات</h3>
+                <a href="">فساتين السهرة</a>
+                <a href=""> ملابس كاجوال </a>
+                <a href="">موديلات حجاب </a>
+                <a href="">بيجامات </a>
+                <a href="">احذية </a>
+                <a href="">شنط </a>
+              </div>
+            </div>
+            <div class="col-md-6 col-lg-4">
+              <div class="footer-link">
+                <h3>خدمة العملاء </h3>
+                <a href="">اتصل بنا </a>
+                <a href=""> سياسة الارجاع</a>
+                <a href="">خريطة الموقع </a>
+                <a href="">ماركات ملابس</a>
+                <a href="">التوصيل</a>
+              </div>
+            </div>
+            <div class="col-md-6 col-lg-4">
+              <div class="footer-link">
+                <h3>من نحن </h3>
+                <a href=""> من نحن </a>
+                <a href=""> سياسة الخصوصية</a>
+                <a href=""> الشروط والاحكام </a>
+                <a href=""> حسابي</a>
+                <div class="footer-social">
+                  <a href=""><i class="fab fa-twitter-square"></i></a>
+                  <a href=""><i class="fab fa-facebook-square"></i></a>
+                  <a href=""><i class="fab fa-google-plus-square"></i></a>
+                  <a href=""><i class="fab fa-instagram-square"></i></a>
+
+                </div>
+                <div class="footer-social m-0">
+
+                  <a href="" style="font-size: 25px; color: #F6F6F6;"><i class="fab fa-paypal"></i></a>
+                  <a href="" style="font-size: 25px; color: #F6F6F6;"><i class="fab fa-cc-mastercard"></i></a>
+
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container copyright">
+      <div class="row">
+        <div style="margin: auto;">
+          <p>جميع الحقوق محفوظة حقوق الطباعة والنشر&copy; <a href="#" style="color: #000;">April.com 2021</a> </p>
+        </div>
+
+      </div>
+    </div>
+  </div>
+  <!-- Footer End -->
+
+  <script>
+    function getVals() {
+      // Get slider values
+      let parent = this.parentNode;
+      let slides = parent.getElementsByTagName("input");
+      let slide1 = parseFloat(slides[0].value);
+      let slide2 = parseFloat(slides[1].value);
+      // Neither slider will clip the other, so make sure we determine which is larger
+      if (slide1 > slide2) { let tmp = slide2; slide2 = slide1; slide1 = tmp; }
+
+      let displayElement = parent.getElementsByClassName("rangeValues")[0];
+      displayElement.innerHTML = slide1 + " USD" + " - " + slide2 + " USD";
+    }
+
+    window.onload = function () {
+      // Initialize Sliders
+      let sliderSections = document.getElementsByClassName("range-slider");
+      for (let x = 0; x < sliderSections.length; x++) {
+        let sliders = sliderSections[x].getElementsByTagName("input");
+        for (let y = 0; y < sliders.length; y++) {
+          if (sliders[y].type === "range") {
+            sliders[y].oninput = getVals;
+            // Manually trigger event first time to display values
+            sliders[y].oninput();
+          }
+        }
+      }
+    }
+  </script>
+
+  <script src="js/swiper-bundle.min.js"></script>
+  <script src="js/fontawosome.all.min.js"></script>
+  <script src="js/bootstrap.bundle.js"></script>
+  <script src="js/jquery-3.3.1.min.js"></script>
+  <script src="js/popper.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/jquery.sticky.js"></script>
+  <script src="js/wow.min.js"></script>
+  <script src="js/main.js"></script>
+</body>
+
+</html>
